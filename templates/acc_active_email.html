@@ -1,0 +1,6 @@
+{% autoescape off %}
+BLACKCAT S.A
+
+Hola {{ user.username }},
+Por favor accede al enlace para confirmar tu registro,http://{{ domain }}{% url 'tienda:activate' uidb64=uid token=token %}
+{% endautoescape %}
